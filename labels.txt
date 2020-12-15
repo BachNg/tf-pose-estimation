@@ -1,0 +1,15 @@
+drink water
+eat meal
+brush teeth
+brush hair
+drop
+pick up
+throw
+sit down
+stand up
+clapping 
+reading
+writing
+tear up paper
+put on jacket
+take off jacket

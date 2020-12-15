@@ -117,6 +117,14 @@ Apply TensoRT
 $ python run_webcam.py --model=mobilenet_thin --resize=432x368 --camera=0 --tensorrt=True
 ```
 
+### Skeleton based Action Recognition (14 Joints Body) Realtime Webcam
+
+```
+$ python3 run_webcam.py --model=mobilenet_v2_small --resize=432x368 --camera=0
+```
+I added SORT human tracking and using 32 skeleton frames (overlap 16 frames) as input to action recognition model (Ref: https://github.com/fandulu/DD-Net).
+Pre-train action recognition model in folder [checkpoints](./checkpoints/) with 15 first actions of NTU_RGBD dataset. (Ref: http://rose1.ntu.edu.sg/datasets/actionrecognition.asp) with accuracy: 87.2%.
+
 Then you will see the realtime webcam screen with estimated poses as below. This [Realtime Result](./etcs/openpose_macbook13_mobilenet2.gif) was recored on macbook pro 13" with 3.1Ghz Dual-Core CPU.
 
 ## Python Usage
